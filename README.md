@@ -1,6 +1,6 @@
 # signer_roles
 
-* setup.sh
-* run.sh
-* localhost:3000
-* teardown.sh
+* terraform init
+* terraform apply
+* navigate to the url
+* terraform destroy

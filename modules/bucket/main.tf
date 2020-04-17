@@ -1,11 +1,3 @@
-variable "file" {
-  type = string
-}
-
-variable "trusted_role" {
-  type = string
-}
-
 resource "aws_s3_bucket" "bucket" {
   force_destroy = "true"
 }
@@ -47,10 +39,3 @@ resource "aws_iam_role" "role" {
   assume_role_policy = data.aws_iam_policy_document.bucket-assume-role-policy.json
 }
 
-output "bucket" {
-  value = aws_s3_bucket.bucket.bucket
-}
-
-output "role" {
-  value = aws_iam_role.role.arn
-}

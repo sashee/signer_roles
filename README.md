@@ -1,5 +1,7 @@
 # Example code for how to use least privilege with signed URLs
 
+To learn more, see [this blog post](https://advancedweb.hu/limit-permissions-with-roles-for-signed-urls/).
+
 ## How to use
 
 * ```terraform init```
